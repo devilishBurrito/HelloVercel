@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello Vercel</title>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="main">
+  <div id="nav">
+    <ul id="navbar">
+      <li><a class="navbtn active" href="#home">Home</a></li>
+      <li><a class="navbtn" href="#about">About Me</a></li>
+      <li><a class="navbtn" href="#interests">My Interests</a></li>
+      <li><a class="navbtn" href="#photos">Photo Reel</a></li>
+    </ul>
+  </div>
+
+  <div id="intro">
+    <h1 id="home">
+      Joe Williams
+    </h1>
+    <p>Hello Vercel team, it’s a pleasure to meet you. Thanks for taking the time to consider my application and look at
+      my demo site.</p>
+  </div>
+
+  <div id="myinfo">
+    <h2 id="about">About Me</h2>
+    <p>I’ve worked in Customer Success for about 8 years now with 4 of those years being in support engineering and
+      spent the most recent 3.5 years as a solutions architect. I am passionate about my customers, learning more and
+      disseminating that information to my peers/customers in a meaningful and easily digestible form. I am currently
+      looking to expand my experience within the CS world with a venture into being a CSM myself. During my 8 years in
+      Martech, I’ve always worked alongside CSMs and held my own book of business with my CSM peers but I’ve never truly
+      stood in their boots.
+    </p>
+
+    <h2 id="experience">My Experience</h2>
+    <p>While my origins are in the world of Technical Theatre, I’ve spent my time since graduating college in Martech. I
+      initially started as an intern at AppsFlyer and over 4 years, I rose through the ranks. By the time I left, I was
+      a Senior Support engineer and had traveled to multiple locations globally to join various customer on-sites,
+      provide enablement sessions for my customers and peers. I traveled on occasion to our Israel HQ to receive
+      advanced training on specific integrations to further my knowledge and further assist my local peers. Needless to
+      say, I enjoyed taking in as much knowledge as possible to further not just myself but those around me and my
+      customers.
+      <br><br>
+      As with anything, every journey has an ending and in 2020, I found that my growth had stunted and that I’d
+      provided as much as I could to my peers and Appsflyer. I joined Iterable in order to take the next big leap in my
+      career and become a Solutions Architect. I wanted a job that provided a new challenge and where I could continue
+      to learn more about the world of Martech and its many players. Needless to say, I found everything I was looking
+      for and more. Much like AppsFlyer, I took great pride in my role and my opportunity to not only help my customers
+      but also my peers. Through my role as an SA, I was expected to be a source of knowledge so I became the unofficial
+      manager of the internal Solutions Knowledge base that was used by all GTM teams and even occasionally used by our
+      Product and Engineer teams to get a greater understanding of customer use cases, frequent blockers and common
+      misconceptions within the product. It was a great honor and no small task given our team had made over 350
+      different use case, FAQ and deep dive documents by the time I left Iterable in 2024. Beyond this, I was able to
+      grow my skill set and understanding of the Martech space and marketing automation & personalization. I traveled
+      far more frequently for customer on-sites and managed a unique book of business that included both customers and
+      partner accounts as I had a dual role as both a Partner SA and Customer SA which was uncommon within the team
+      (there were only 2 of us with this unique dual-role during my time at Iterable). I wore many other hats during my
+      time at Iterable but my customers were always my top priority.
+    </p>
+  </div>
+
+  <div id="inthobbies">
+    <h2 id="interests">My Interests & Hobbies</h2>
+    <p>Having come from the world of Technical Theatre and studied at a liberal arts school, I enjoy watching theatre,
+      supporting small artists and other types of content creators (everything from gaming to youtube to TV/movies and
+      music). As of late, I’ve taken to the kitchen in order to up my skills and learning to appreciate and better
+      understand the lovely meals that often end up plated in front of me. Though if we’re being honest, I still have a
+      ways to go before I can truly create without the assistance of a cookbook.
+      <br><br>
+      At any moment I can be found picking up my tablet pen to draw, plucking the strings of my guitar or flailing my
+      way thru a recipe I was convinced I had properly prepared for only to realize I’m missing 1-2 ingredients for and
+      have to improvise. On rare occasions, I am inspired to take photos of beautiful landscaping and wonderful floral
+      arrangements (often used for my zoom backgrounds nowadays as seen <a href="#photos">below</a>).
+      <br><br>
+      In short, I love all things art and creation and am always trying new things to see what sticks or just to better
+      understand the process behind it.
+    </p>
+
+    <p> Thank you for your time and consideration!<br>-Joe Williams</p>
+
+    <h2 id="photos">Some Fun Photos</h2>
+    <p id="imgtxt">Some random photos I've taken over the years and used for zoom or phone backgrounds</p>
+    <div id="img-gallery">
+      <img src="res/1.jpg">
+      <img src="res/2.jpg">
+      <img src="res/3.jpg">
+      <img src="res/4.jpg">
+      <img src="res/5.jpg">
+      <img src="res/6.jpg">
+      <img src="res/7.jpg">
+      <img src="res/8.jpg">
+    </div>
+  </div>
+</body>
+
+
+<script>
+  var btns = document.getElementById("navbar").getElementsByClassName("navbtn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
+</html>
